@@ -4,19 +4,22 @@
   "description": "mocha chai petstore example",
   "main": "index.js",
   "scripts": {
-    "test get": "mocha filename.js",
-    "test post": "mocha filename.js"
+    "test": "mocha",
+    "testGet": "mocha test/api/getExample.js",
+    "testPost": "mocha test/api/postExample.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nopevbf/javascript-automation.git"
   },
+  "type": "module",
   "author": "nopevbf",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.3.7",
     "jsonschema": "^1.4.1",
     "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
     "supertest": "^6.3.3"
   }
 }
