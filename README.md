@@ -1,5 +1,5 @@
 # JavaScript Automation Training
-
+  
 ---
 ## Installation Configuration
 * [Download Node.js](https://nodejs.org/en/)
@@ -33,4 +33,15 @@ $ npm i jsonschema
   * Cobalah buat untuk endpoint ``` Get Pet Information ``` dan ``` Create User ```
   * Silakan membuat automate untuk API lain untuk portofolio kamu dari API dibawah ini :
   * [reqres.in](https://reqres.in/)
-  
+
+---
+## Reporting (optional)
+* Install mochawesome
+```
+$ npm install mochawesome
+```
+* Kemduian ketikkan code berikut ganti sesuai lokasi
+```
+$ npx --spec test/api/chaiAssert.js --reporter mochawesome
+```
+<img src="/data/Screenshot 2023-02-09 172436.png">
