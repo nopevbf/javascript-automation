@@ -11,5 +11,10 @@
     "url": "javascrip-automation"
   },
   "author": "nopevbf",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "jsonschema": "^1.4.1",
+    "supertest": "^6.3.3"
+  }
 }
