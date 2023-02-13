@@ -1,18 +1,10 @@
 import request from "supertest";
 import baseUrl from "../../env.js";
+import DATA from "../../data/userData.js";
 
 describe("POST Request Example", () => {
   it("Create User", async () => {
-    const response = request(baseUrl()).post("/user").send({
-      id: 123456,
-      username: "nopevbf",
-      firstName: "firman",
-      lastName: "aji",
-      email: "furiamnjay+test@gmail.com",
-      password: "123456789",
-      phone: "082298507500",
-      userStatus: 1,
-    });
+    const response = request(baseUrl()).post("/user").send(DATA.CREATE_USER);
     console.log((await response).status);
     console.log((await response).body);
   });
